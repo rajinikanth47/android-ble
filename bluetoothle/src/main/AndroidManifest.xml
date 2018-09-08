@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mdaq.bluetoothle" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!--BLE scanning is commonly used to determincurrencyItemuser's location with Bluetooth LE beacons. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <!-- if your app targets API level 21 or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+
+    <application android:allowBackup="true" android:supportsRtl="true"/>
+
+
+</manifest>
